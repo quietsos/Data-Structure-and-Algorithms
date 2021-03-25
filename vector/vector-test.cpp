@@ -32,6 +32,11 @@ int main(){
     }
     puts(""); //newline in vector
 
+    it = vec.begin(); // iterator is act as an pointer
+//    it++;
+    cout<<*it<<endl;
+
+
 
 
 

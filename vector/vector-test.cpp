@@ -10,10 +10,10 @@ int main(){
 
     int array[3];
 
-    vector<int> vec;
-    vec.push_back(34); //vec[0]=32
-    vec.push_back(10); //vec[1]=10
-    vec.push_back(11); //vec[3]=11
+    vector<int> vec(3,0); // this vector contain 3 element and all the element value will be 0
+//    vec.push_back(34); //vec[0]=32
+//    vec.push_back(10); //vec[1]=10
+//    vec.push_back(11); //vec[3]=11
 
     //cout<<vec;
     printf("%d\n",vec[1]);

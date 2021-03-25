@@ -10,35 +10,41 @@ using namespace std;
 
 int main(){
 
-    int array[3];
 
-  // vector<int> vec(3,0); // this vector contain 3 element and all the element value will be 0
-  vector<int> vec;
+    //iterator create in int size vector
+   vector<int> vec;
    vector<int>::iterator it;
+//
+//   //iterator create in double size vector
+//   vector<double> vec1;
+//   vector<double>::iterator it2;
+//   it2=vec1.begin();
+//
+//   //interator create in char size vector
+//   vector<char> vec2;
+//   vector<char>::iterator it3;
+//   it3 = vec2.begin();
 
    for(int i=1;i<=5;i++){
-        vec.push_back(i);
+    vec.push_back(i);
    }
-//    vec.push_back(11);
-//    vec.push_back(34); //vec[0]=32
-//    vec.push_back(10); //vec[1]=10
-//    vec.push_back(11); //vec[3]=11
 
-//    printf("%d\n",vec[1]);
-    cout<<vec.size()<<endl;
 
-    for(int i=0;i<vec.size(); i++){
-        cout<<vec[i]<<"\t";
-    }
-    puts(""); //newline in vector
+   for(int i=0;i<=vec.size();i++){
+    cout<<vec[i]<<"\t";
 
-    it = vec.begin(); // iterator is act as an pointer
-//    it++;
+   }
+
+    puts(" ");
+
+    it=vec.begin();
+    it++;
     cout<<*it<<endl;
 
-
-
-
+    //print vector element using iterator
+    for(it = vec.begin();it != vec.end(); it++){
+        cout<<*it<<endl;
+    }
 
 
 
